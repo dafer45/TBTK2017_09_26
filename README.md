@@ -4,23 +4,27 @@ Make sure the installed version is v0.9.4. If TBTK has been compiled with CUDA
 support this project can be compiled immediately by typing 'make'. If TBTK has
 been compiled without CUDA support, the lines
 
-```CPropertyExtractor propertyExtractor(  
+```
+CPropertyExtractor propertyExtractor(  
 	cSolver,  
 	NUM_COEFFICIENTS,  
 	true,  
 	false,  
 	true  
-);```
+);
+```
 
 in src/main.cpp first need to be modified to 
 
-```CPropertyExtractor propertyExtractor(  
+```
+CPropertyExtractor propertyExtractor(  
 	cSolver,  
 	NUM_COEFFICIENTS,  
 	true,  
 	false,  
 	true  
-);```
+);
+```
 
 and the makefile will need to be modified in accordance with instructions
 provided there. Once this is done, type 'make' to compile the project.
