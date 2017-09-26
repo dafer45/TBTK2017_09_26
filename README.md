@@ -46,12 +46,17 @@ done on a CPU other than for comparatively small lattice sizes.
 # Plot results
 Two different plot scripts are provided for the two cases where cut1D is set
 to true (1) and false (0). If a calculation was done with cut1D=1, type
-'./plot.py TBTKResults.h5 1.57 0 0.005' to plot the results. Here The first
-parameter is the file TBTKResults.h5 where the results are stored after the
-calculation, the second and third are the polar and azimuthal angles of the
-spin-polarization, respectively, and the fourth is a smoothing parameter
-(sigma) used to perform Gaussian smoothing in the energy direction. The value
-of these parameters can be played with to see the result for different
-polarization axes and smoothing. The ploted results are found in the folder
-'figures'. If the calculation instead was done with cut1D=0, replace
-'./plot.py'with './plot2D.py'.
+```
+./plot.py TBTKResults.h5 1.57 0 0.005
+```
+to plot the results. Here The first parameter is the file TBTKResults.h5 where
+the results are stored after the calculation, the second and third are the
+polar and azimuthal angles of the spin-polarization, respectively, and the
+fourth is a smoothing parameter (sigma) used to perform Gaussian smoothing in
+the energy direction. The value of these parameters can be played with to see
+the result for different polarization axes and smoothing. The ploted results
+are found in the folder 'figures'. If the calculation instead was done with
+cut1D=0, instead write
+```
+./plot.py TBTKResults.h5 1.57 0 0.005
+```
