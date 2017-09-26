@@ -5,21 +5,21 @@ support this project can be compiled immediately by typing 'make'. If TBTK has
 been compiled without CUDA support, the lines
 
 CPropertyExtractor propertyExtractor(  
-	cSolver,  
-	NUM_COEFFICIENTS,  
-	true,  
-	false,  
-	true  
+        cSolver,  
+        NUM_COEFFICIENTS,  
+        true,  
+        false,  
+        true  
 );
 
 in src/main.cpp first need to be modified to 
 
 CPropertyExtractor propertyExtractor(  
-	cSolver,  
-	NUM_COEFFICIENTS,  
-	true,  
-	false,  
-	true  
+        cSolver,  
+        NUM_COEFFICIENTS,  
+        true,  
+        false,  
+        true  
 );
 
 and the makefile will need to be modified in accordance with instructions
