@@ -216,13 +216,10 @@ int main(int argc, char **argv){
 
 	//Create PropertyExtractor. The parameter are in order: The
 	//ChebyshevSolver, number of expansion coefficients used in the
-	//Cebyshev expansion, energy resolution with which the Green's function
-	// is evaluated, whether calculate expansion functions using a GPU or
-	//not, whether to evaluate the Green's function using a GPU or not,
-	//whether to use a lookup table for the Green's function or not
-	//(required if the Green's function is evaluated on a GPU), and the
-	//lower and upper bound between which the Green's function is evaluated
-	//(has to be inside the interval [-SCALE_FACTOR, SCALE_FACTOR]).
+	//Cebyshev expansion, whether to calculate expansion functions using a
+	//GPU or not, whether to evaluate the Green's function using a GPU or
+	//not, and whether to use a lookup table for the Green's function or not
+	//(required if the Green's function is evaluated on a GPU).
 	CPropertyExtractor pe(
 		cSolver,
 		NUM_COEFFICIENTS,
